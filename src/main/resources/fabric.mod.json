@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "colorvoice",
+  "version": "${version}",
+  "name": "Color Voice",
+  "description": "Sag eine Farbe per Simple Voice Chat und alle Bloecke im Umkreis verwandeln sich in zufaellige Bloecke dieser Farbe.",
+  "authors": ["du"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["colorvoice.ColorVoiceMod"],
+    "voicechat": ["colorvoice.ColorVoicePlugin"]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.0",
+    "minecraft": ">=26.2 <27",
+    "java": ">=25",
+    "fabric-api": "*",
+    "voicechat": "*"
+  }
+}
